@@ -1,10 +1,10 @@
-import TaskList from '../components/TaskList.vue';
+import PureTaskList from '../components/PureTaskList.vue';
 
 import * as TaskStories from './Task.stories';
 
 export default {
-  component: TaskList,
-  title: 'TaskList',
+  component: PureTaskList,
+  title: 'PureTaskList',
   decorators: [() => ({ template: '<div style="margin: 3em;"><story/></div>' })],
   argTypes: {
     onPinTask: {},
@@ -14,11 +14,11 @@ export default {
 
 // 模板函数
 const Template = args => ({
-  components: { TaskList },
+  components: { PureTaskList },
   setup() {
     return { args, ...TaskStories.actionsData };
   },
-  template: '<TaskList v-bind="args" />',
+  template: '<PureTaskList v-bind="args" />',
 });
 
 // 状态 1：默认
