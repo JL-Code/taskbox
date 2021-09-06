@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TaskList from "./components/PureTaskList.vue";
+import TaskList from "./components/TaskList";
 
 export default {
   name: "App",
